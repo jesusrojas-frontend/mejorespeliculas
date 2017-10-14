@@ -7,6 +7,375 @@ head
 	link(rel="stylesheet", href="/font-awesome/css/font-awesome.min.css")
 	link(rel="stylesheet", href="/css/estilos.css")
 body
-	h1 Inicio del proyecto de mejorers peliculas
+	header.header
+		nav.navbar.navbar-light.bg-light.justify-content-between
+			<a class="navbar-brand">Mejorespeliculas</a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+			</form>
+			
+			ul.navbar-nav
+				<li class="nav-item">
+					<a class="nav-link" href="#">Iniciar Seción</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Registrarse</a>
+				</li>
+	section.portada
+		.row.align-items-center
+			.col
+				img(src="/img/wonder.jpg", alt="wonder")
+				.hidden
+					h3 Mujer Maravilla
+					i.fa.fa-play-circle-o
+			.col
+				img(src="/img/spiderman.jpg", alt="spiderman")
+				.hidden
+					h3 Spiderman Regreso a Casa
+					i.fa.fa-play-circle-o
+			.col
+				img(src="/img/piratas.jpg", alt="piratas")
+				.hidden
+					h3 Piratas del Caribe
+					i.fa.fa-play-circle-o
+	section.cartelera
+		ul.menu
+			li
+				p Categoria
+				a(href="#")
+					i.fa.fa-bars
+			li
+				label Año
+				p 2017
+				a(href="#")
+					i.fa.fa-angle-down
+			li
+				label Calidad
+				p Full HD 1080p
+				a(href="#")
+					i.fa.fa-angle-down
+		.categorias
+			ul
+				li
+					a(href="#") Acción
+				li
+					a(href="#") Animación
+				li
+					a(href="#") Aventura
+				li
+					a(href="#") Biografía
+				li
+					a(href="#") Ciencia ficción
+				li
+					a(href="#") Cine negro
+				li
+					a(href="#") Comedia
+				li
+					a(href="#") Crimen
+				li
+					a(href="#") Deporte
+				li
+					a(href="#") Documental
+				li
+					a(href="#") Drama
+			.recomendado
+				h3 Recomendado
+				.col-md-2
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/nerve.jpg", alt="nerve")
+						.card-body
+							h4.card-title Nerve
+							small.text-muted Descipcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				
+		article.peliculas
+			.row
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/nerve.jpg", alt="nerve")
+						.card-body
+							h4.card-title Nerve
+							small.text-muted Descipcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/villano.jpg", alt="villano")
+						span.card-body
+							h4.card-title Mi villano Favorito 3
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/night.jpg", alt="nigth")
+						span.card-body
+							h4.card-title Rough Night
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/baywatch.jpg", alt="baywatch")
+						span.card-body
+							h4.card-title BayWatch
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/it.jpg", alt="it")
+						span.card-body
+							h4.card-title It
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/power.jpg", alt="power")
+						span.card-body
+							h4.card-title Power Rangersq
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/woman.jpg", alt="woman")
+						span.card-body
+							h4.card-title Wonder Woman
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/guardianes.jpg", alt="guardianes")
+						span.card-body
+							h4.card-title Guardianes de la Galaxia 2
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+				.col-md-4
+					.card
+						a(href="#")
+							img.card-img-top(src="/img/momia.jpg", alt="momia")
+						span.card-body
+							h4.card-title Momia
+							small.text-muted Descripcion
+							ul.estrellas
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+								li
+									a(href="#")
+										i.fa.fa-star
+										i.fa.fa-star
+			ul.navegacion
+				li
+					a(href="#").prev
+						i.fa.fa-angle-left
+				li
+					a(href="#") 1
+				li
+					a(href="#") ...
+				li
+					a(href="#") 13
+				li
+					a(href="#") 14
+				li
+					a(href="#").active 15
+				li
+					a(href="#") 16
+				li
+					a(href="#") 17
+				li
+					a(href="#") ...
+				li
+					a(href="#") 94
+				li
+					a(href="#").next
+						i.fa.fa-angle-right
+
+	footer.footer
+		.footer-body
+			.container
+				.row
+					.col-md-4
+						h4 Categoria
+						ul
+							li
+								a(href="#") Accion
+							li
+								a(href="#") Comedia
+							li
+								a(href="#") Romance
+					.col-md-4
+						h4 Mejores
+						ul
+							li
+								a(href="#") Kong
+							li
+								a(href="#") Arthur
+							li
+								a(href="#") nuevo
+					.col-md-4
+						h4 Redes Sociales
+						ul
+							li
+								a(href="#")
+									i.fa.fa-facebook
+							li
+								a(href="#")
+									i.fa.fa-twitter
+							li
+								a(href="#")
+									i.fa.fa-instagram
+		.footer-footer
+			p!= "&copy; 2017 Diseño y Desarrollo por <a href='http://jesusrojas.com.ve'>Jesús Rojas</a>"
 	script(src="/js/jquery.js")
 	script(src="/bootstrap/js/bootstrap.min.js")
