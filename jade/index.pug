@@ -83,9 +83,11 @@ body
 				.col-md-12
 					.card
 						a(href="#")
-							img.card-img-top(src="/img/nerve.jpg", alt="nerve")
+							img.card-img-top(src="/img/logan.jpg", alt="logan")
+							.nuevo
+								span Nuevo
 						.card-body
-							h4.card-title Nerve
+							h4.card-title Logan
 							small.text-muted Descipcion
 							ul.estrellas
 								li
@@ -203,7 +205,7 @@ body
 						a(href="#")
 							img.card-img-top(src="/img/power.jpg", alt="power")
 						span.card-body
-							h4.card-title Power Rangersq
+							h4.card-title Power Rangers
 							small.text-muted Descripcion
 							ul.estrellas
 								li
@@ -319,38 +321,39 @@ body
 	footer.footer
 		.footer-body
 			.container
-				.row
-					.col-md-4
-						h4 Categoria
-						ul
-							li
-								a(href="#") Accion
-							li
-								a(href="#") Comedia
-							li
-								a(href="#") Romance
-					.col-md-4
-						h4 Mejores
-						ul
-							li
-								a(href="#") Kong
-							li
-								a(href="#") Arthur
-							li
-								a(href="#") nuevo
-					.col-md-4
-						h4 Redes Sociales
-						ul
-							li
-								a(href="#")
-									i.fa.fa-facebook
-							li
-								a(href="#")
-									i.fa.fa-twitter
-							li
-								a(href="#")
-									i.fa.fa-instagram
+				//.row
+				.division
+					h4 Categoria
+					ul
+						li
+							a(href="#") Accion
+						li
+							a(href="#") Comedia
+						li
+							a(href="#") Romance
+				.division
+					h4 Mejores
+					ul
+						li
+							a(href="#") Kong
+						li
+							a(href="#") Arthur
+						li
+							a(href="#") nuevo
+				.division
+					h4 Redes Sociales
+					ul.sociales
+						li
+							a(href="#")
+								i.fa.fa-facebook
+						li
+							a(href="#")
+								i.fa.fa-twitter
+						li
+							a(href="#")
+								i.fa.fa-instagram
 		.footer-footer
-			p!= "&copy; 2017 Diseño y Desarrollo por <a href='http://jesusrojas.com.ve'>Jesús Rojas</a>"
+			.container
+				p!= "&copy; 2017 Diseño y Desarrollo por <a href='http://jesusrojas.com.ve'>Jesús Rojas</a>"
 	script(src="/js/jquery.js")
 	script(src="/bootstrap/js/bootstrap.min.js")

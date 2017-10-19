@@ -132,14 +132,26 @@ a:hover {
       color: white;
       padding-bottom: 1em; }
     .cartelera .recomendado img {
-      height: auto; }
+      height: auto;
+      position: relative; }
     .cartelera .recomendado .card {
       position: absolute; }
+    .cartelera .recomendado .nuevo {
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      background: #e84c4c; }
+      .cartelera .recomendado .nuevo span {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: .5em;
+        font-size: .8rem; }
   .cartelera .peliculas .col-md-4 {
     max-width: 25%; }
   .cartelera .peliculas .card {
     height: 500px;
-    margin-bottom: 1em; }
+    margin-bottom: 2em; }
   .cartelera .peliculas .navegacion {
     text-align: center;
     width: 100%;
@@ -169,3 +181,45 @@ a:hover {
         background: #12141e; }
 
 /* Cartelera */
+/* Footer */
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer .footer-body {
+  background: #12141e;
+  padding-top: 2em; }
+  .footer .footer-body h4 {
+    color: white; }
+  .footer .footer-body ul {
+    padding-left: 0; }
+    .footer .footer-body ul li {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .footer .footer-body ul li a {
+        color: #434859;
+        transition: .2s;
+        padding: .2em; }
+      .footer .footer-body ul li a:hover {
+        color: white; }
+  .footer .footer-body .sociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer .footer-body .sociales a {
+      font-size: 1.8rem; }
+
+.footer .footer-footer {
+  padding: 1em 0 .5em;
+  color: #434859; }
+
+/* Footer */

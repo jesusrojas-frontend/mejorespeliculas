@@ -116,15 +116,27 @@ a:hover
 			padding-bottom: 1em
 		img
 			height: auto
+			position: relative
 		.card
 			position: absolute
+		.nuevo
+			position: absolute
+			top: 1em
+			right: 1em
+			background: #e84c4c
+			span
+				color: white
+				font-weight: bold
+				text-transform: uppercase
+				padding: .5em
+				font-size: .8rem
 	// Peliculas
 	.peliculas
 		.col-md-4
 			max-width: 25%
 		.card
 			height: 500px
-			margin-bottom: 1em
+			margin-bottom: 2em
 		.navegacion
 			text-align: center
 			width: 100%
@@ -152,10 +164,36 @@ a:hover
 					position: relative
 					top: 4px
 					background: #12141e
-
-
-
-
 /* Cartelera */
+/* Footer */
+.footer
+	.container
+		display: flex
+		justify-content: space-between
+	.footer-body
+		background: #12141e
+		padding-top: 2em
+		h4
+			color: white
+		ul
+			padding-left: 0
+			li
+				list-style: none
+				display: flex
+				a
+					color: #434859
+					transition: .2s
+					padding: .2em
+				a:hover
+					color: white
+		.sociales
+			display: flex
+			justify-content: space-between
+			a
+				font-size: 1.8rem
+	.footer-footer
+		padding: 1em 0 .5em
+		color: #434859
+/* Footer */
 
 
