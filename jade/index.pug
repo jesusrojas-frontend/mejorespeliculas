@@ -45,21 +45,17 @@ body
 	section.cartelera
 		ul.menu
 			li
-				p Categoria
-				a(href="#")
-					i.fa.fa-bars
+				a(href="#")!= "Categoria <i class='fa fa-bars'></i>"
+					
 			li
 				label Año
-				p 2017
-				a(href="#")
-					i.fa.fa-angle-down
+				a(href="#")!= "2017 <i class='fa fa-angle-down'></i>"
+					
 			li
 				label Calidad
-				p Full HD 1080p
-				a(href="#")
-					i.fa.fa-angle-down
+				a(href="#")!= "Full HD 1080p <i class='fa fa-angle-down'></i>"
 		.categorias
-			ul
+			ul.cat
 				li
 					a(href="#") Acción
 				li
@@ -84,7 +80,7 @@ body
 					a(href="#") Drama
 			.recomendado
 				h3 Recomendado
-				.col-md-2
+				.col-md-12
 					.card
 						a(href="#")
 							img.card-img-top(src="/img/nerve.jpg", alt="nerve")
@@ -139,29 +135,6 @@ body
 							img.card-img-top(src="/img/villano.jpg", alt="villano")
 						span.card-body
 							h4.card-title Mi villano Favorito 3
-							small.text-muted Descripcion
-							ul.estrellas
-								li
-									a(href="#")
-										i.fa.fa-star
-								li
-									a(href="#")
-										i.fa.fa-star
-								li
-									a(href="#")
-										i.fa.fa-star
-								li
-									a(href="#")
-										i.fa.fa-star
-								li
-									a(href="#")
-										i.fa.fa-star
-				.col-md-4
-					.card
-						a(href="#")
-							img.card-img-top(src="/img/night.jpg", alt="nigth")
-						span.card-body
-							h4.card-title Rough Night
 							small.text-muted Descripcion
 							ul.estrellas
 								li
@@ -317,31 +290,31 @@ body
 								li
 									a(href="#")
 										i.fa.fa-star
-			ul.navegacion
-				li
-					a(href="#").prev
-						i.fa.fa-angle-left
-				li
-					a(href="#") 1
-				li
-					a(href="#") ...
-				li
-					a(href="#") 13
-				li
-					a(href="#") 14
-				li
-					a(href="#").active 15
-				li
-					a(href="#") 16
-				li
-					a(href="#") 17
-				li
-					a(href="#") ...
-				li
-					a(href="#") 94
-				li
-					a(href="#").next
-						i.fa.fa-angle-right
+				ul.navegacion
+					li
+						a(href="#").prev
+							i.fa.fa-angle-left
+					li
+						a(href="#") 1
+					li
+						a(href="#") ...
+					li
+						a(href="#") 13
+					li
+						a(href="#") 14
+					li
+						a(href="#").active 15
+					li
+						a(href="#") 16
+					li
+						a(href="#") 17
+					li
+						a(href="#") ...
+					li
+						a(href="#") 94
+					li
+						a(href="#").next
+							i.fa.fa-angle-right
 
 	footer.footer
 		.footer-body

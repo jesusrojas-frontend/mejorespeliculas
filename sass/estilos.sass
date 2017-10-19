@@ -1,7 +1,22 @@
-img
-	height: 580px
-.card
-	height: 828px
+body
+	background: #03050b
+	overflow-x: hidden
+a:hover
+	text-decoration: none
+.card // quitando los bordes a los card
+	border: none
+	text-align: center
+	background: #12151e
+	color: white
+	padding: 1em
+.estrellas//agregando los estilos a las estrellas
+	padding: 0
+	li
+		display: inline
+		a
+			color: #434859
+		a:hover
+			color: #ef8f12
 /* Header  */
 .header
 	background: #03050b
@@ -64,9 +79,83 @@ img
 			transition: .3s
 			top: 0
 			display: flex
-			transform: scale(1.2)
-
-
 /* Poratda*/
+/* Cartelera */
+.cartelera
+	padding-top: 2em
+	.menu
+		li
+			padding-right: 4em
+			display: inline-block
+			label
+				color: #434859
+			a
+				color: white
+			label,a
+				display: block
+	.categorias
+		float: left
+		padding-right: 2em
+		.cat
+			li
+				list-style: none
+				display: flex
+				a
+					color: #434859
+					transition: .3s
+					padding: .5em 1em
+					border-radius: 5px
+					width: 100%
+				a:hover
+					color: white
+					background: #297fd7
+	.recomendado
+		padding-left: 40px
+		h3
+			color: white
+			padding-bottom: 1em
+		img
+			height: auto
+		.card
+			position: absolute
+	// Peliculas
+	.peliculas
+		.col-md-4
+			max-width: 25%
+		.card
+			height: 500px
+			margin-bottom: 1em
+		.navegacion
+			text-align: center
+			width: 100%
+			padding: 2em 0
+			li
+				display: inline-block
+				a
+					font-weight: bold
+					display: inline-block
+					width: 40px
+					height: 40px
+					line-height: 10px
+					padding: 1em 0
+					color: #383d4c
+					border-radius: 50%
+					transition: .3s
+					i
+						font-weight: bold
+						font-size: 1.8rem
+						line-height: 10px
+				a:hover
+					color: white
+					background: #00b4ff
+				a.prev,a.next
+					position: relative
+					top: 4px
+					background: #12141e
+
+
+
+
+/* Cartelera */
 
 

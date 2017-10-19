@@ -1,8 +1,25 @@
-img {
-  height: 580px; }
+body {
+  background: #03050b;
+  overflow-x: hidden; }
+
+a:hover {
+  text-decoration: none; }
 
 .card {
-  height: 828px; }
+  border: none;
+  text-align: center;
+  background: #12151e;
+  color: white;
+  padding: 1em; }
+
+.estrellas {
+  padding: 0; }
+  .estrellas li {
+    display: inline; }
+    .estrellas li a {
+      color: #434859; }
+    .estrellas li a:hover {
+      color: #ef8f12; }
 
 /* Header  */
 .header {
@@ -77,8 +94,78 @@ img {
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+    display: flex; }
 
 /* Poratda*/
+/* Cartelera */
+.cartelera {
+  padding-top: 2em; }
+  .cartelera .menu li {
+    padding-right: 4em;
+    display: inline-block; }
+    .cartelera .menu li label {
+      color: #434859; }
+    .cartelera .menu li a {
+      color: white; }
+    .cartelera .menu li label, .cartelera .menu li a {
+      display: block; }
+  .cartelera .categorias {
+    float: left;
+    padding-right: 2em; }
+    .cartelera .categorias .cat li {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .cartelera .categorias .cat li a {
+        color: #434859;
+        transition: .3s;
+        padding: .5em 1em;
+        border-radius: 5px;
+        width: 100%; }
+      .cartelera .categorias .cat li a:hover {
+        color: white;
+        background: #297fd7; }
+  .cartelera .recomendado {
+    padding-left: 40px; }
+    .cartelera .recomendado h3 {
+      color: white;
+      padding-bottom: 1em; }
+    .cartelera .recomendado img {
+      height: auto; }
+    .cartelera .recomendado .card {
+      position: absolute; }
+  .cartelera .peliculas .col-md-4 {
+    max-width: 25%; }
+  .cartelera .peliculas .card {
+    height: 500px;
+    margin-bottom: 1em; }
+  .cartelera .peliculas .navegacion {
+    text-align: center;
+    width: 100%;
+    padding: 2em 0; }
+    .cartelera .peliculas .navegacion li {
+      display: inline-block; }
+      .cartelera .peliculas .navegacion li a {
+        font-weight: bold;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 10px;
+        padding: 1em 0;
+        color: #383d4c;
+        border-radius: 50%;
+        transition: .3s; }
+        .cartelera .peliculas .navegacion li a i {
+          font-weight: bold;
+          font-size: 1.8rem;
+          line-height: 10px; }
+      .cartelera .peliculas .navegacion li a:hover {
+        color: white;
+        background: #00b4ff; }
+      .cartelera .peliculas .navegacion li a.prev, .cartelera .peliculas .navegacion li a.next {
+        position: relative;
+        top: 4px;
+        background: #12141e; }
+
+/* Cartelera */
