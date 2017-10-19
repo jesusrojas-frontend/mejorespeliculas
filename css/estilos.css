@@ -3,3 +3,82 @@ img {
 
 .card {
   height: 828px; }
+
+/* Header  */
+.header {
+  background: #03050b; }
+  .header .navbar-brand {
+    color: white;
+    padding-left: 1em; }
+  .header .form-inline .form-control {
+    border-radius: .25rem 0 0 .25rem;
+    color: white; }
+  .header .form-inline .form-control, .header .form-inline .btn {
+    background: #12141e;
+    border: 1px solid #12141e;
+    color: white; }
+  .header .form-inline .btn {
+    border-radius: 0 .25rem .25rem 0;
+    color: #3e4353; }
+  .header .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .header .navbar-nav .link {
+      color: white !important;
+      padding-right: 1em; }
+
+/* Header  */
+/* Poratda*/
+.portada {
+  padding: 3em 0;
+  background: #12141e; }
+  .portada .fotos {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block; }
+    .portada .fotos img {
+      width: 100%;
+      height: auto;
+      -webkit-filter: brightness(90%);
+              filter: brightness(90%);
+      transition: .3s; }
+    .portada .fotos .hidden {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-top: 25%;
+      display: none;
+      transition: 1s;
+      top: 100%; }
+      .portada .fotos .hidden .fa {
+        font-size: 4rem; }
+  .portada .fotos:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 1000; }
+  .portada .fotos:hover .hidden {
+    transition: .3s;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
+/* Poratda*/

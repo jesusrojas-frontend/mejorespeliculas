@@ -8,37 +8,40 @@ head
 	link(rel="stylesheet", href="/css/estilos.css")
 body
 	header.header
-		nav.navbar.navbar-light.bg-light.justify-content-between
-			<a class="navbar-brand">Mejorespeliculas</a>
+		nav.navbar.navbar-light.justify-content-between.menu
+			<a class="navbar-brand" href="/">Mejorespeliculas</a>
 			<form class="form-inline">
-				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+				<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+				<button class="btn" type="submit">
+					span.fa.fa-search
+				</button>
 			</form>
 			
 			ul.navbar-nav
-				<li class="nav-item">
-					<a class="nav-link" href="#">Iniciar Seción</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Registrarse</a>
-				</li>
+				li
+					<a class="nav-link link" href="#">Iniciar Seción</a>
+				li
+					<a class="nav-link link" href="#">Registrarse</a>
 	section.portada
 		.row.align-items-center
-			.col
-				img(src="/img/wonder.jpg", alt="wonder")
-				.hidden
-					h3 Mujer Maravilla
-					i.fa.fa-play-circle-o
-			.col
-				img(src="/img/spiderman.jpg", alt="spiderman")
-				.hidden
-					h3 Spiderman Regreso a Casa
-					i.fa.fa-play-circle-o
-			.col
-				img(src="/img/piratas.jpg", alt="piratas")
-				.hidden
-					h3 Piratas del Caribe
-					i.fa.fa-play-circle-o
+			.col-md-4
+				a(href="#").fotos
+					img(src="/img/wonder.jpg", alt="wonder")
+					.hidden
+						i.fa.fa-play-circle-o
+						p Mujer Maravilla
+			.col-md-4
+				a(href="#").fotos
+					img(src="/img/spiderman.jpg", alt="spiderman")
+					.hidden
+						i.fa.fa-play-circle-o
+						p Spiderman Regreso a Casa
+			.col-md-4
+				a(href="#").fotos
+					img(src="/img/piratas.jpg", alt="piratas")
+					.hidden
+						i.fa.fa-play-circle-o
+						p Piratas del Caribe
 	section.cartelera
 		ul.menu
 			li
@@ -313,7 +316,6 @@ body
 										i.fa.fa-star
 								li
 									a(href="#")
-										i.fa.fa-star
 										i.fa.fa-star
 			ul.navegacion
 				li
