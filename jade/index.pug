@@ -26,19 +26,19 @@ body
 		.row.align-items-center
 			.col-md-4
 				a(href="#").fotos
-					img(src="img/wonder.jpg", alt="wonder")
+					img(data-src="img/wonder.jpg", alt="wonder")
 					.hidden
 						i.fa.fa-play-circle-o
 						p Mujer Maravilla
 			.col-md-4
 				a(href="#").fotos
-					img(src="img/spiderman.jpg", alt="spiderman")
+					img(data-src="img/spiderman.jpg", alt="spiderman")
 					.hidden
 						i.fa.fa-play-circle-o
 						p Spiderman Regreso a Casa
 			.col-md-4
 				a(href="#").fotos
-					img(src="img/piratas.jpg", alt="piratas")
+					img(data-src="img/piratas.jpg", alt="piratas")
 					.hidden
 						i.fa.fa-play-circle-o
 						p Piratas del Caribe
@@ -83,7 +83,7 @@ body
 				.col-md-12
 					.card
 						a(href="#")
-							img.card-img-top(src="img/logan.jpg", alt="logan")
+							img.card-img-top(data-src="img/logan.jpg", alt="logan")
 							.nuevo
 								span Nuevo
 						.card-body
@@ -111,7 +111,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/nerve.jpg", alt="nerve")
+							img.card-img-top(data-src="img/nerve.jpg", alt="nerve")
 						.card-body
 							h4.card-title Nerve
 							small.text-muted Descipcion
@@ -134,7 +134,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/villano.jpg", alt="villano")
+							img.card-img-top(data-src="img/villano.jpg", alt="villano")
 						span.card-body
 							h4.card-title Mi villano Favorito 3
 							small.text-muted Descripcion
@@ -157,7 +157,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/baywatch.jpg", alt="baywatch")
+							img.card-img-top(data-src="img/baywatch.jpg", alt="baywatch")
 						span.card-body
 							h4.card-title BayWatch
 							small.text-muted Descripcion
@@ -180,7 +180,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/it.jpg", alt="it")
+							img.card-img-top(data-src="img/it.jpg", alt="it")
 						span.card-body
 							h4.card-title It
 							small.text-muted Descripcion
@@ -203,7 +203,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/power.jpg", alt="power")
+							img.card-img-top(data-src="img/power.jpg", alt="power")
 						span.card-body
 							h4.card-title Power Rangers
 							small.text-muted Descripcion
@@ -226,7 +226,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/woman.jpg", alt="woman")
+							img.card-img-top(data-src="img/woman.jpg", alt="woman")
 						span.card-body
 							h4.card-title Wonder Woman
 							small.text-muted Descripcion
@@ -249,7 +249,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/guardianes.jpg", alt="guardianes")
+							img.card-img-top(data-src="img/guardianes.jpg", alt="guardianes")
 						span.card-body
 							h4.card-title Guardianes de la Galaxia 2
 							small.text-muted Descripcion
@@ -272,7 +272,7 @@ body
 				.col-md-4
 					.card
 						a(href="#")
-							img.card-img-top(src="img/momia.jpg", alt="momia")
+							img.card-img-top(data-src="img/momia.jpg", alt="momia")
 						span.card-body
 							h4.card-title Momia
 							small.text-muted Descripcion
@@ -356,3 +356,5 @@ body
 				p!= "&copy; 2017 Diseño y Desarrollo por <a href='http://jesusrojas.com.ve'>Jesús Rojas</a>"
 	script(src="js/jquery.js")
 	script(src="bootstrap/js/bootstrap.min.js")
+	script(src="js/lazy.js")
+	script(src="js/app.js")
