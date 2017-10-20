@@ -25,3 +25,13 @@ mediaQuery();
 var bLazy = new Blazy({
   selector: 'img'
 });
+var $categorias = document.getElementById('categorias');
+var $categoriaMenu = document.getElementById('categoria-menu');
+var $iconoMenu = document.getElementById('icono-menu');
+$categorias.addEventListener("click", contraer);
+
+function contraer() {
+  $categoriaMenu.classList.toggle('active');
+  $categoriaMenu.classList.toggle('ocultar');
+  $iconoMenu.classList.toggle('rotar');
+}

@@ -45,16 +45,16 @@ body
 	section.cartelera
 		ul.menu
 			li
-				a(href="#")!= "Categoria <i class='fa fa-bars'></i>"
+				span.link#categorias!= "Categoria <i class='fa fa-bars' id='icono-menu'></i>"
 					
-			li
+			li.ano
 				label Año
-				a(href="#")!= "2017 <i class='fa fa-angle-down'></i>"
+				span.link!= "2017 <i class='fa fa-angle-down'></i>"
 					
 			li
 				label Calidad
-				a(href="#")!= "Full HD 1080p <i class='fa fa-angle-down'></i>"
-		.categorias
+				span.link!= "Full HD 1080p <i class='fa fa-angle-down'></i>"
+		.categorias.active#categoria-menu
 			ul.cat
 				li
 					a(href="#") Acción

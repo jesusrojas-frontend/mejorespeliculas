@@ -71,44 +71,63 @@ a:hover
 			top: 100%
 			.fa
 				font-size: 4rem
+		i,p,.hiden
+			transition: .3s
+
 	.fotos:hover
 		img
 			transform: scale(1.2)
 			z-index: 1000
 		.hidden
-			transition: .3s
-			top: 0
 			display: flex
+			top: 0
 /* Poratda*/
 /* Cartelera */
 .cartelera
 	padding-top: 2em
+	position: relative
 	.menu
+		.ano
+			padding-left: 6em
 		li
 			padding-right: 4em
 			display: inline-block
+			i
+				transition: .3s
 			label
 				color: #434859
-			a
+			.link
 				color: white
-			label,a
+			label,.link
 				display: block
+			.link:hover
+				cursor: pointer
 	.categorias
 		float: left
 		padding-right: 2em
+		position: absolute
+		left: -100%
+		transition: .3s
 		.cat
 			li
 				list-style: none
 				display: flex
+			
 				a
 					color: #434859
 					transition: .3s
 					padding: .5em 1em
 					border-radius: 5px
 					width: 100%
+
 				a:hover
 					color: white
 					background: #297fd7
+	.categorias.active
+		position: relative
+		left: 0
+	.rotar
+		transform: rotate(90deg)
 	.recomendado
 		padding-left: 40px
 		h3
@@ -135,7 +154,8 @@ a:hover
 		.col-md-4
 			max-width: 25%
 		.card
-			height: 500px
+			min-height: 500px
+			max-height: 570px
 			margin-bottom: 2em
 		.navegacion
 			text-align: center
@@ -195,5 +215,4 @@ a:hover
 		padding: 1em 0 .5em
 		color: #434859
 /* Footer */
-
 
