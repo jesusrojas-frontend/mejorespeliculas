@@ -358,7 +358,7 @@ a:hover {
     .peliculas .col-md-4 {
       max-width: 100% !important; }
       .peliculas .col-md-4 .card {
-        min-height: auto; }
+        min-height: 681px !important; }
         .peliculas .col-md-4 .card .card-title {
           font-size: 2rem; }
   /*footer*/
