@@ -5,32 +5,33 @@
   <title>Las Mejores Películas</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-light justify-content-between menu"><a class="navbar-brand" href="/mejorespeliculas">Mejorespeliculas</a>
-<form class="form-inline">
+    <nav class="navbar navbar-light justify-content-between menu"><a class="navbar-brand" href="/mejorespeliculas">Mejorespeliculas</a><span class="fa fa-bars boton" id="boton"></span>
+      <div class="contenedor" id="contenedor"><form class="form-inline">
 <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
 <button class="btn" type="submit"><span class="fa fa-search"></span></button>
 </form>
-      <ul class="navbar-nav">
-        <li><a class="nav-link link" href="#">Iniciar Seción</a></li>
-        <li><a class="nav-link link" href="#">Registrarse</a></li>
-      </ul>
+        <ul class="navbar-nav">
+          <li><a class="nav-link link" href="#">Iniciar Seción</a></li>
+          <li><a class="nav-link link" href="#">Registrarse</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <section class="portada">
     <div class="row align-items-center">
-      <div class="col-md-4"><a class="fotos" href="#"><img data-src="img/wonder.jpg" alt="wonder">
+      <div class="col-md-4"><a class="fotos" href="#"><img src="img/wonder.jpg" alt="wonder">
           <div class="hidden"><i class="fa fa-play-circle-o"></i>
             <p>Mujer Maravilla</p>
           </div></a></div>
-      <div class="col-md-4"><a class="fotos" href="#"><img data-src="img/spiderman.jpg" alt="spiderman">
+      <div class="col-md-4"><a class="fotos" href="#"><img src="img/spiderman.jpg" alt="spiderman">
           <div class="hidden"><i class="fa fa-play-circle-o"></i>
             <p>Spiderman Regreso a Casa</p>
           </div></a></div>
-      <div class="col-md-4"><a class="fotos" href="#"><img data-src="img/piratas.jpg" alt="piratas">
+      <div class="col-md-4"><a class="fotos" href="#"><img src="img/piratas.jpg" alt="piratas">
           <div class="hidden"><i class="fa fa-play-circle-o"></i>
             <p>Piratas del Caribe</p>
           </div></a></div>

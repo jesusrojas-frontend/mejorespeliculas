@@ -6,39 +6,42 @@ head
 	link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
 	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
 	link(rel="stylesheet", href="css/estilos.css")
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 body
 	header.header
 		nav.navbar.navbar-light.justify-content-between.menu
 			<a class="navbar-brand" href="/mejorespeliculas">Mejorespeliculas</a>
-			<form class="form-inline">
-				<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
-				<button class="btn" type="submit">
-					span.fa.fa-search
-				</button>
-			</form>
-			
-			ul.navbar-nav
-				li
-					<a class="nav-link link" href="#">Iniciar Seción</a>
-				li
-					<a class="nav-link link" href="#">Registrarse</a>
+			span.fa.fa-bars.boton#boton
+			.contenedor#contenedor
+				<form class="form-inline">
+					<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+					<button class="btn" type="submit">
+						span.fa.fa-search
+					</button>
+				</form>
+				
+				ul.navbar-nav
+					li
+						<a class="nav-link link" href="#">Iniciar Seción</a>
+					li
+						<a class="nav-link link" href="#">Registrarse</a>
 	section.portada
 		.row.align-items-center
 			.col-md-4
 				a(href="#").fotos
-					img(data-src="img/wonder.jpg", alt="wonder")
+					img(src="img/wonder.jpg", alt="wonder")
 					.hidden
 						i.fa.fa-play-circle-o
 						p Mujer Maravilla
 			.col-md-4
 				a(href="#").fotos
-					img(data-src="img/spiderman.jpg", alt="spiderman")
+					img(src="img/spiderman.jpg", alt="spiderman")
 					.hidden
 						i.fa.fa-play-circle-o
 						p Spiderman Regreso a Casa
 			.col-md-4
 				a(href="#").fotos
-					img(data-src="img/piratas.jpg", alt="piratas")
+					img(src="img/piratas.jpg", alt="piratas")
 					.hidden
 						i.fa.fa-play-circle-o
 						p Piratas del Caribe
