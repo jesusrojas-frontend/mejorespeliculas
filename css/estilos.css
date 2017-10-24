@@ -1,5 +1,5 @@
 body {
-  background: #03050b;
+  background: #03050b !important;
   overflow-x: hidden; }
 
 a:hover {
@@ -8,7 +8,7 @@ a:hover {
 .card {
   border: none;
   text-align: center;
-  background: #12151e;
+  background: #12151e !important;
   color: white;
   padding: 1em; }
 
