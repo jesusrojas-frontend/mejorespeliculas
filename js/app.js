@@ -1,36 +1,14 @@
-/*var consulta = window.matchMedia('(max-width: 500px)');
-consulta.addListener(mediaQuery);
- var $burguerButton = document.getElementById("burguer-button");
-var $menu = document.getElementById('menu');
-function toggleMenu() {
-  $menu.classList.toggle('active');
-}
 
-
-
-function mediaQuery() {
-  
-  if(consulta.matches){
-    console.log("Se cumplio la condicion")
-    $burguerButton.addEventListener("touchstart", toggleMenu);
-    
-  }else{
-    console.log("No se cumplio la condicion");
-    $burguerButton.removeEventListener("touchstart", toggleMenu);
-  }
-}
-mediaQuery();
-*/
 //Lazy loading
-var bLazy = new Blazy({
+let bLazy = new Blazy({
   selector: 'img'
 });
-var $categorias = document.getElementById('categorias');
-var $categoriaMenu = document.getElementById('categoria-menu');
-var $iconoMenu = document.getElementById('icono-menu');
-var $boton = document.getElementById('boton');
-var $contenedor = document.getElementById('contenedor');
-var consulta = window.matchMedia('(max-width: 500px)');
+let $categorias = document.getElementById('categorias');
+let $categoriaMenu = document.getElementById('categoria-menu');
+let $iconoMenu = document.getElementById('icono-menu');
+let $boton = document.getElementById('boton');
+let $contenedor = document.getElementById('contenedor');
+let consulta = window.matchMedia('(max-width: 500px)');
 consulta.addListener(mediaQuery)
 $categorias.addEventListener("click", contraer);
 $boton.addEventListener("click", ocultar);
